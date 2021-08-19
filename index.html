@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>SPLITTER</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <img src="./images/logo.svg" alt="logo">
+        </div>
+        <div class="bill-container">
+            <div class="col">
+                <div class="billinputs">
+                    <div class="titles">
+                        Bill
+                    </div>
+                    <div class="inputs">
+                        <img src="./images/icon-dollar.svg" alt="dollar">
+                        <input required id="bill" placeholder="0" type="text">
+                    </div>
+                </div>
+                <div class="tips">
+                    <div class="titles">
+                        Select Tip %
+                    </div>
+                    <div class="tipsbtns">
+                        <button value="5" class="buttonss">5%</button>
+                        <button value="10" class="buttonss">10%</button>
+                        <button value="15" class="buttonss">15%</button>
+                        <button value="20" class="buttonss">20%</button>
+                        <button value="50" class="buttonss">50%</button>
+                        <button class="custom">Custom</button>
+                    </div>
+                    <div class="noppl">
+                        <div class="titles">
+                            Number of People
+                        </div>
+                        <div class="inputs">
+                            <img src="./images/icon-person.svg" alt="dollar">
+                            <input required id="people" placeholder="0" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col amounts">
+                <div class="totals">
+                    <div class="row">
+                        <div class="names">
+                            <div>Tip Amount</div>
+                            <div class="tagline">/ person</div>
+                        </div>
+                        <div class="ttlamount">
+                            <img src="./images/icon-dollar.svg" alt="dollar">
+                            <div id="tipamt">0.00</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="names">
+                            <div>Total</div>
+                            <div class="tagline">/ person</div>
+                        </div>
+                        <div class="ttlamount">
+                            <img src="./images/icon-dollar.svg" alt="dollar">
+                            <div id="total">0.00</div>
+                        </div>
+                    </div>
+                    <div class="reset">
+                        <button id="reset">RESET</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

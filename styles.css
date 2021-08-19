@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+    --Strongcyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --light-grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan2: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Mono', monospace;
+    background-color: var(--light-grayish-cyan2);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.title{
+    margin-bottom: 3.6rem;
+}
+.bill-container{
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1.6rem;
+    display: flex;
+}
+.titles{
+    font-weight: 700;
+    color: var(--dark-grayish-cyan);
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
+}
+.tipsbtns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.7rem;
+}
+.tipsbtns button{
+    padding: 0.5rem;
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.tipsbtns button:hover{
+    background-color: var(--Strongcyan);
+}
+.tipsbtns .custom{
+    background-color: var(--white);
+    color: var(--dark-grayish-cyan);
+}
+.inputs{
+    background-color: var(--light-grayish-cyan2);
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+}
+.inputs input{
+    font-size: 15px;
+    text-align: right;
+    padding: 0.2rem;
+    border: none;
+    background-color: transparent;
+    color: var(--dark-grayish-cyan);
+    font-weight: 700;
+}
+.billinputs, .tips, .noppl{
+    margin: 1rem 0; 
+}
+.amounts{
+    background-color: var(--very-dark-cyan);
+    margin-left: 1.8rem;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: 700;
+    padding: 1.6em;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 00.5rem 0;
+}
+.names{
+    margin-right: 2.6rem;
+}
+.tagline{
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.ttlamount img, .ttlamount div{
+    display: inline;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 18vh;
+}
+.reset button{
+    width: 100%;
+    padding: 0.4rem;
+    font-weight: 700;
+    color: var(--very-dark-cyan);
+    background-color: var(--Strongcyan);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
